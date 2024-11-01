@@ -146,6 +146,7 @@ header i {
 }
 .weather-part img {
   max-width: 125px;
+  pointer-events: none;
 }
 .weather-part .temp {
   display: flex;
