@@ -51,14 +51,18 @@ body {
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
-header i {
+header svg {
+  width: 0;
+  height: 0;
   font-size: 0em;
   cursor: pointer;
-  margin-right: 8px;
+  margin-right: 4px;
+  fill: var(--text-color);
 }
-.wrapper.active header i {
+.wrapper.active header svg {
   margin-left: 5px;
-  font-size: 30px;
+  width: 30px;
+  height: 30px;
 }
 .wrapper .input-part {
   margin: 20px 25px 30px;
@@ -174,9 +178,11 @@ header i {
   margin-bottom: 30px;
   align-items: flex-start;
 }
-.location i {
-  font-size: 22px;
+.location svg {
+  width: 22px;
+  height: 22px;
   margin: 4px 5px 0 0;
+  fill: rgb(255, 255, 255);
 }
 .weather-part .bottom-details {
   display: flex;
@@ -191,9 +197,10 @@ header i {
   align-items: center;
   justify-content: center;
 }
-.column i {
-  color: var(--secondary-color);
-  font-size: 40px;
+.column svg {
+  fill: var(--secondary-color);
+  width: 40px;
+  height: 40px;
 }
 .column.humidity {
   border-left: 1px solid #ccc;
